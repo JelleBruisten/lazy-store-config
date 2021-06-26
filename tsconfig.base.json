@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@lazy-store-config/my-feature": ["libs/my-feature/src/index.ts"],
+      "@lazy-store-config/my-domain": ["libs/my-domain/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,34 +1,27 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "lazy-store-config",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
   "projects": {
-    "lazy-store-config": {
-      "tags": []
-    },
+    "lazy-store-config": { "tags": [] },
     "lazy-store-config-e2e": {
       "tags": [],
       "implicitDependencies": ["lazy-store-config"]
-    }
+    },
+    "my-feature": { "tags": [] },
+    "my-domain": { "tags": [] }
   }
 }
