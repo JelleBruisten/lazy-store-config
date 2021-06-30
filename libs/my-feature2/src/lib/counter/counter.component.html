@@ -1,0 +1,8 @@
+<button (click)="counter.increase()">increase</button>
+<button (click)="counter.decrease()">decrease</button>
+<button (click)="counter.reset()">reset</button>
+
+<br />
+<p>{{ counter.count$ | async}}</p>
+
+it even creates a seperate slice state key within this feature, but the actions are linked since they are same type...
